@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:1234/order
+    username: soukaina
+    password: soukaina
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+#
+#  application:
+#    config:
+#      customer-url: http://localhost:8222/api/v1/customers
+#      payment-url: http://localhost:8222/api/v1/payments
+#      product-url: http://localhost:8222/api/v1/products
+
+server:
+  port: 8704
