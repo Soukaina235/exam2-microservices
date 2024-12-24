@@ -10,7 +10,7 @@ import java.math.BigDecimal;
 import java.util.List;
 
 public record OrderRequest(
-        Integer id, // In case we want to update our order
+        Integer id,
         String reference,
         @Positive(message = "Order amount should be positive")
         BigDecimal amount,
